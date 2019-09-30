@@ -20,8 +20,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:orientation="vertical"
+        android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/navBarBorder"
@@ -29,11 +30,11 @@
 
         <LinearLayout
             android:id="@+id/floor1"
+            android:theme="@style/parkView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:layout_marginBottom="5dp">
 
             <TextView
                 android:id="@+id/col1"
@@ -41,7 +42,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/col1"
-                android:theme="@style/label"/>
+                android:theme="@style/label"
+                android:gravity="center"/>
 
 
             <TextView
@@ -50,16 +52,18 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/col2"
-                android:theme="@style/label"/>
+                android:theme="@style/label"
+                android:gravity="center"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/floor2"
+            android:theme="@style/parkView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:layout_marginBottom="5dp">
 
             <TextView
                 android:id="@+id/col3"
@@ -67,7 +71,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/col3"
-                android:theme="@style/label"/>
+                android:theme="@style/label"
+                android:gravity="center"/>
 
 
             <TextView
@@ -76,16 +81,18 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/col4"
-                android:theme="@style/label"/>
+                android:theme="@style/label"
+                android:gravity="center"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/floor3"
+            android:theme="@style/parkView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:layout_marginBottom="5dp">
 
             <TextView
                 android:id="@+id/col5"
@@ -93,7 +100,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/col5"
-                android:theme="@style/label"/>
+                android:theme="@style/label"
+                android:gravity="center"/>
 
 
             <TextView
@@ -102,7 +110,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/col6"
-                android:theme="@style/label"/>
+                android:theme="@style/label"
+                android:gravity="center"/>
 
         </LinearLayout>
 
