@@ -40,4 +40,8 @@
     <string name="cancel">Cancel</string>
     <string name="title_activity_study_material">Parking Assistant</string>
     <string name="title_activity_par1">Parking 1</string>
+
+    <string name="title_activity_par1_floor1">1st Floor</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

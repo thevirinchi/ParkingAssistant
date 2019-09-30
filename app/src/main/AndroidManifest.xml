@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".par1Floor1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_par1_floor1"
+            android:parentActivityName=".Par1"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.z3t4z00k.parkingassistant.Par1" />
+        </activity>
+        <activity
             android:name=".Par1"
             android:label="@string/title_activity_par1"
             android:parentActivityName=".data"
