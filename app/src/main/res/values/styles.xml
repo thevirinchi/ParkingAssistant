@@ -63,4 +63,24 @@
         <item name="android:background">@drawable/parkview</item>
     </style>
 
+    <style name="parkVac">
+        <item name="android:background">@drawable/parkvac</item>
+    </style>
+
+    <style name="parkOcc">
+        <item name="android:background">@drawable/parkocc</item>
+    </style>
+
+    <style name="parkErr">
+        <item name="android:background">@drawable/parkerr</item>
+    </style>
+
+    <style name="parkDif">
+        <item name="android:background">@drawable/parkdif</item>
+    </style>
+
+    <style name="parkRes">
+        <item name="android:background">@drawable/parkres</item>
+    </style>
+
 </resources>

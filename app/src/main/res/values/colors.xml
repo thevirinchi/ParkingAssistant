@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Application Colors -->
     <color name="colorPrimary">#212121</color>
     <color name="colorPrimaryDark">#1a1a1a</color>
     <color name="colorAccent">#aeea00</color>
     <color name="colorSecondary">#27a844</color>
     <color name="colorTertiary">#17a2b7</color>
     <color name="colorQuart">#007aff</color>
+
+    <!-- Text Colors -->
     <color name="white">#ffffff</color>
     <color name="grey">#495058</color>
     <color name="mediumGrey">#9fa4a8</color>
     <color name="lightGrey">#e8ecef</color>
+
+    <!-- Parking Colors -->
+    <color name="colorVac">#b0ff57</color>
+    <color name="colorOcc">#ff616f</color>
+    <color name="colorErr">#ffff5a</color>
+    <color name="colorDif">#83b9ff</color>
+    <color name="colorRes">#fafafa</color>
 
     <color name="black_overlay">#66000000</color>
 </resources>
