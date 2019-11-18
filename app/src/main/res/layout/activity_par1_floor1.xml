@@ -24,7 +24,6 @@
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
-
         </LinearLayout>
     </FrameLayout>
 
@@ -39,315 +38,57 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/p17"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:background="@color/colorPrimary"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
-
-            <RelativeLayout
-                android:id="@+id/p171"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkVac" />
-
-            <RelativeLayout
-                android:id="@+id/p172"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkOcc" />
-
-            <RelativeLayout
-                android:id="@+id/p173"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkErr" />
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@color/colorPrimaryDark"/>
-
-            <RelativeLayout
-                android:id="@+id/p174"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkDif" />
-
-            <RelativeLayout
-                android:id="@+id/p175"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkRes" />
-
-            <RelativeLayout
-                android:id="@+id/p176"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkVac" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/p16"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:background="@color/colorPrimary"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
-
-            <RelativeLayout
-                android:id="@+id/p161"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkVac" />
-
-            <RelativeLayout
-                android:id="@+id/p162"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkOcc" />
-
-            <RelativeLayout
-                android:id="@+id/p163"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkErr" />
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@color/colorPrimaryDark" />
-
-            <RelativeLayout
-                android:id="@+id/p164"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkDif" />
-
-            <RelativeLayout
-                android:id="@+id/p165"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkRes" />
-
-            <RelativeLayout
-                android:id="@+id/p166"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkVac" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/p15"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:background="@color/colorPrimary"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
-
-            <RelativeLayout
-                android:id="@+id/p151"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkVac" />
-
-            <RelativeLayout
-                android:id="@+id/p152"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkOcc" />
-
-            <RelativeLayout
-                android:id="@+id/p153"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkErr" />
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@color/colorPrimaryDark" />
-
-            <RelativeLayout
-                android:id="@+id/p154"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkDif" />
-
-            <RelativeLayout
-                android:id="@+id/p155"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkRes" />
-
-            <RelativeLayout
-                android:id="@+id/p156"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkVac" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/p14"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:background="@color/colorPrimary"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
-
-            <RelativeLayout
-                android:id="@+id/p141"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkVac" />
-
-            <RelativeLayout
-                android:id="@+id/p142"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkOcc" />
-
-            <RelativeLayout
-                android:id="@+id/p143"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkErr" />
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@color/colorPrimaryDark" />
-
-            <RelativeLayout
-                android:id="@+id/p144"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkDif" />
-
-            <RelativeLayout
-                android:id="@+id/p145"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkRes" />
-
-            <RelativeLayout
-                android:id="@+id/p146"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:theme="@style/parkVac" />
-
-        </LinearLayout>
-
-        <LinearLayout
             android:id="@+id/p13"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
             android:background="@color/colorPrimary"
             android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:paddingHorizontal="4dp"
+            android:paddingTop="4dp">
 
             <RelativeLayout
-                android:id="@+id/p131"
+                android:id="@+id/p119"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkVac" />
+                android:theme="@style/parkVac" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="19"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p132"
+                android:id="@+id/p120"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkOcc" />
+                android:theme="@style/parkOcc" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="20"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p133"
+                android:id="@+id/p121"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkErr" />
+                android:theme="@style/parkErr" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="21"/>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -356,28 +97,46 @@
                 android:background="@color/colorPrimaryDark" />
 
             <RelativeLayout
-                android:id="@+id/p134"
+                android:id="@+id/p122"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkDif" />
+                android:theme="@style/parkDif" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="22"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p135"
+                android:id="@+id/p123"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkRes" />
+                android:theme="@style/parkRes" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="23"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p136"
+                android:id="@+id/p124"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkVac" />
+                android:theme="@style/parkVac" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="24"/>
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -397,31 +156,50 @@
             android:layout_weight="3"
             android:background="@color/colorPrimary"
             android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:paddingHorizontal="4dp">
 
             <RelativeLayout
-                android:id="@+id/p121"
+                android:id="@+id/p113"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkVac" />
+                android:theme="@style/parkVac" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="13"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p122"
+                android:id="@+id/p114"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkOcc" />
+                android:theme="@style/parkOcc" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="14"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p123"
+                android:id="@+id/p115"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkErr" />
+                android:theme="@style/parkErr" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="15"/>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -430,28 +208,46 @@
                 android:background="@color/colorPrimaryDark" />
 
             <RelativeLayout
-                android:id="@+id/p124"
+                android:id="@+id/p116"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkDif" />
+                android:theme="@style/parkDif" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="16"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p125"
+                android:id="@+id/p117"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkRes" />
+                android:theme="@style/parkRes" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="17"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p126"
+                android:id="@+id/p118"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkVac" />
+                android:theme="@style/parkVac" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="18"/>
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -462,31 +258,50 @@
             android:layout_weight="3"
             android:background="@color/colorPrimary"
             android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:paddingHorizontal="4dp">
 
             <RelativeLayout
-                android:id="@+id/p111"
+                android:id="@+id/p107"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkVac" />
+                android:theme="@style/parkVac">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="07"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p112"
+                android:id="@+id/p108"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkOcc" />
+                android:theme="@style/parkOcc" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="08"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p113"
+                android:id="@+id/p109"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkErr" />
+                android:theme="@style/parkErr" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="09"/>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -495,28 +310,46 @@
                 android:background="@color/colorPrimaryDark" />
 
             <RelativeLayout
-                android:id="@+id/p114"
+                android:id="@+id/p110"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkDif" />
+                android:theme="@style/parkDif" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="10"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p115"
+                android:id="@+id/p111"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkRes" />
+                android:theme="@style/parkRes" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="11"/>
+            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/p116"
+                android:id="@+id/p112"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkVac" />
+                android:theme="@style/parkVac" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="12"/>
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -536,7 +369,8 @@
             android:layout_weight="3"
             android:background="@color/colorPrimary"
             android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:paddingHorizontal="4dp">
 
             <RelativeLayout
                 android:id="@+id/p101"
@@ -544,7 +378,14 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkVac" />
+                android:theme="@style/parkVac">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="01"
+                    />
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/p102"
@@ -552,7 +393,13 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkOcc" />
+                android:theme="@style/parkOcc">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="02"/>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/p103"
@@ -560,7 +407,13 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkErr" />
+                android:theme="@style/parkErr" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="03"/>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -569,6 +422,7 @@
                 android:background="@color/colorPrimaryDark" >
 
                 <ImageView
+                    android:layout_margin="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/ic_pos"/>
@@ -581,7 +435,13 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkDif" />
+                android:theme="@style/parkDif" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="04"/>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/p105"
@@ -589,7 +449,13 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkRes" />
+                android:theme="@style/parkRes" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="05"/>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/p106"
@@ -597,7 +463,182 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:theme="@style/parkVac" />
+                android:theme="@style/parkVac" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="06"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/navBarBorder"
+            android:theme="@style/border"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <ImageView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/ic_pos"/>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="Entry"
+                android:gravity="center"
+                android:theme="@style/normal"
+                android:layout_marginEnd="8dp"/>
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="8dp"
+                android:padding="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/parkDif"/>
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="For Differently Abled"
+                android:gravity="center"
+                android:theme="@style/normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:padding="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/parkErr"/>
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="Parking Error"
+                android:gravity="center"
+                android:theme="@style/normal"
+                android:layout_marginEnd="8dp"/>
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="8dp"
+                android:padding="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/parkOcc"/>
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="Occupied"
+                android:gravity="center"
+                android:theme="@style/normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:padding="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/parkRes"/>
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="Reserved"
+                android:gravity="center"
+                android:theme="@style/normal"
+                android:layout_marginEnd="8dp"/>
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="8dp"
+                android:padding="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/parkVac"/>
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="Vacant"
+                android:gravity="center"
+                android:theme="@style/normal"/>
 
         </LinearLayout>
 
