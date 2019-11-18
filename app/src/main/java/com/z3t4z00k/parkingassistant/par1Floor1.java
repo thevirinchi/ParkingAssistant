@@ -6,12 +6,15 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -21,6 +24,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import androidx.core.app.NavUtils;
 
@@ -92,6 +98,32 @@ public class par1Floor1 extends AppCompatActivity {
             }
         });
 
+        final RelativeLayout[] slots = new RelativeLayout[24];
+        slots[0] = findViewById(R.id.p101);
+        slots[1] = findViewById(R.id.p102);
+        slots[2] = findViewById(R.id.p103);
+        slots[3] = findViewById(R.id.p104);
+        slots[4] = findViewById(R.id.p105);
+        slots[5] = findViewById(R.id.p106);
+        slots[6] = findViewById(R.id.p107);
+        slots[7] = findViewById(R.id.p108);
+        slots[8] = findViewById(R.id.p109);
+        slots[9] = findViewById(R.id.p110);
+        slots[10] = findViewById(R.id.p111);
+        slots[11] = findViewById(R.id.p112);
+        slots[12] = findViewById(R.id.p113);
+        slots[13] = findViewById(R.id.p114);
+        slots[14] = findViewById(R.id.p115);
+        slots[15] = findViewById(R.id.p116);
+        slots[16] = findViewById(R.id.p117);
+        slots[17] = findViewById(R.id.p118);
+        slots[18] = findViewById(R.id.p119);
+        slots[19] = findViewById(R.id.p120);
+        slots[20] = findViewById(R.id.p121);
+        slots[21] = findViewById(R.id.p122);
+        slots[22] = findViewById(R.id.p123);
+        slots[23] = findViewById(R.id.p124);
+
         final ProgressDialog pdLoading = new ProgressDialog(par1Floor1.this);
         pdLoading.setMessage("\tLoading...");
         pdLoading.setCancelable(false);
@@ -102,7 +134,15 @@ public class par1Floor1 extends AppCompatActivity {
             public void onResponse(String response) {
                 pdLoading.dismiss();
                 Log.d("CODE", response);
-
+                Toast.makeText(par1Floor1.this, "Current Parking status", Toast.LENGTH_LONG).show();
+                char[] cur = response.toCharArray();
+                for (int i = 0; i < 24; i++){
+                    if(cur[i] == '1') slots[i].setBackgroundResource(R.drawable.parkdif);
+                    else if(cur[i] == '2') slots[i].setBackgroundResource(R.drawable.parkerr);
+                    else if(cur[i] == '3') slots[i].setBackgroundResource(R.drawable.parkocc);
+                    else if(cur[i] == '4') slots[i].setBackgroundResource(R.drawable.parkres);
+                    else if(cur[i] == '5') slots[i].setBackgroundResource(R.drawable.parkvac);
+                }
             }
         }, new Response.ErrorListener() {
             @Override
