@@ -69,13 +69,10 @@ public class MainActivity extends AppCompatActivity {
         status = prefs.getBoolean(STATUS, false);
 
         if(status){
-            try {
-                Toast.makeText(MainActivity.this, "Hello " + prefs.getString("fnm", "NULL") + "!", Toast.LENGTH_LONG).show();
-            }
-            catch(Exception e){
+            if(prefs.getString("fnm", "NULL").equals("NULL"))
                 Toast.makeText(MainActivity.this, "Hello " + prefs.getString("usn", "NULL") + "!", Toast.LENGTH_LONG).show();
-            }
-
+            else
+                Toast.makeText(MainActivity.this, "Hello " + prefs.getString("fnm", "NULL") + "!", Toast.LENGTH_LONG).show();
             finish();
             Intent intent = new Intent(MainActivity.this, data.class);
             startActivity(intent);

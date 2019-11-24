@@ -9,14 +9,14 @@
     tools:showIn="@layout/activity_profile"
     android:background="@color/colorPrimary">
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:id="@+id/navBarBorder"
         android:theme="@style/border"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,8 +24,8 @@
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/navBarBorder"
-        app:layout_constraintBottom_toTopOf="@id/footerBorder">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Space
             android:layout_width="0dp"
@@ -240,10 +240,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/submit"
-                    android:background="@drawable/primarybutton"
+                    android:background="@drawable/grad"
                     android:layout_marginEnd="16dp"
                     android:textColor="@color/white"
-                    android:clickable="true"
                     android:onClick="register"/>
 
                 <Button
@@ -251,9 +250,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/cancel"
-                    android:background="@drawable/secondarybutton"
-                    android:textColor="@color/white"
-                    android:clickable="true"/>
+                    android:background="@drawable/grad"
+                    android:textColor="@color/white"/>
 
             </LinearLayout>
 
@@ -266,14 +264,14 @@
 
     </LinearLayout>
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:id="@+id/footerBorder"
         android:theme="@style/border"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/footer"/>
+        app:layout_constraintBottom_toTopOf="@id/footer"/>-->
 
     <LinearLayout
         android:id="@+id/footer"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application Colors -->
-    <color name="colorPrimary">#212121</color>
-    <color name="colorPrimaryDark">#1a1a1a</color>
-    <color name="colorAccent">#aeea00</color>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#2aa0df</color>
     <color name="colorSecondary">#27a844</color>
     <color name="colorTertiary">#17a2b7</color>
     <color name="colorQuart">#007aff</color>

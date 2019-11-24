@@ -120,9 +120,9 @@ public class Profile extends AppCompatActivity {
                             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
                             SharedPreferences.Editor editor = prefs.edit();
                             try {
-                                editor.putString("fnm", obj.getString("fnm"));
-                                editor.putString("lnm", obj.getString("lnm"));
-                                editor.putString("cnm", obj.getString("cnm"));
+                                editor.putString("fnm", fnm);
+                                editor.putString("lnm", lnm);
+                                editor.putString("cnm", cnm);
                                 editor.putBoolean("dets", true);
                             }
                             catch (Exception e) {
