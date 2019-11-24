@@ -81,8 +81,8 @@ public class data extends AppCompatActivity {
             startActivity(about);
         }
         else if (id == R.id.action_logout){
-            SharedPreferences pref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = pref.edit();
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+            SharedPreferences.Editor editor = prefs.edit();
             editor.clear();
             editor.commit();
             finish();
