@@ -167,10 +167,10 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_about) {
+        /*if (id == R.id.action_about) {
             Intent about = new Intent(MainActivity.this, About.class);
             startActivity(about);
-        }
+        }*/
 
         return super.onOptionsItemSelected(item);
     }

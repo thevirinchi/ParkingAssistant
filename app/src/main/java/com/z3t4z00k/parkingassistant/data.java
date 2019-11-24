@@ -76,10 +76,10 @@ public class data extends AppCompatActivity {
             Intent profile = new Intent(data.this, Profile.class);
             startActivity(profile);
         }
-        else if (id == R.id.action_about) {
+        /*else if (id == R.id.action_about) {
             Intent about = new Intent(data.this, About.class);
             startActivity(about);
-        }
+        }*/
         else if (id == R.id.action_logout){
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
             SharedPreferences.Editor editor = prefs.edit();
