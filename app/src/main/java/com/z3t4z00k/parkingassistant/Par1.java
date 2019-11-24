@@ -44,7 +44,7 @@ public class Par1 extends AppCompatActivity {
         StringRequest request = new StringRequest(Request.Method.GET, URL_PARK, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(Par1.this, response, Toast.LENGTH_LONG).show();
+                Toast.makeText(Par1.this, "Welcome", Toast.LENGTH_LONG).show();
                 pdLoading.dismiss();
                 Log.d("CODE", response);
                 char[] cur = response.toCharArray();
