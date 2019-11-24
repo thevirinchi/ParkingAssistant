@@ -243,7 +243,8 @@
                     android:background="@drawable/primarybutton"
                     android:layout_marginEnd="16dp"
                     android:textColor="@color/white"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="register"/>
 
                 <Button
                     android:id="@+id/cancel"

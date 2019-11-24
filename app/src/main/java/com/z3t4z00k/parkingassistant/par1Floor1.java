@@ -15,6 +15,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -134,15 +135,19 @@ public class par1Floor1 extends AppCompatActivity {
             public void onResponse(String response) {
                 pdLoading.dismiss();
                 Log.d("CODE", response);
-                Toast.makeText(par1Floor1.this, "Current Parking status", Toast.LENGTH_LONG).show();
+                String s1 = response.substring(response.indexOf(",")+1);
+                String id = "p" + s1.trim();
+                int resId = getResources().getIdentifier(id, "id", getPackageName());
+                RelativeLayout selected = findViewById(resId);
                 char[] cur = response.toCharArray();
                 for (int i = 0; i < 24; i++){
-                    if(cur[i] == '1') slots[i].setBackgroundResource(R.drawable.parkdif);
-                    else if(cur[i] == '2') slots[i].setBackgroundResource(R.drawable.parkerr);
-                    else if(cur[i] == '3') slots[i].setBackgroundResource(R.drawable.parkocc);
-                    else if(cur[i] == '4') slots[i].setBackgroundResource(R.drawable.parkres);
-                    else if(cur[i] == '5') slots[i].setBackgroundResource(R.drawable.parkvac);
+                    if(cur[i] == '1') slots[i].setBackgroundResource(R.drawable.parkocc);
+                    else if(cur[i] == '2') slots[i].setBackgroundResource(R.drawable.parkvac);
                 }
+                selected.setBackgroundResource((R.drawable.parkdif));
+                TextView msg = findViewById(R.id.Message);
+                s1 = s1.substring(1);
+                msg.setText("1st Floor Slot: " + s1);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -170,7 +175,7 @@ public class par1Floor1 extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == android.R.id.home) {
-            NavUtils.navigateUpFromSameTask(this);
+            startActivity(new Intent(par1Floor1.this, data.class));
             return true;
         }
         return super.onOptionsItemSelected(item);

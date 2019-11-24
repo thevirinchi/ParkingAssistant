@@ -9,6 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -64,11 +65,17 @@ public class MainActivity extends AppCompatActivity {
         ed_username = findViewById(R.id.usn);
         ed_password = findViewById(R.id.psw);
 
-        sharedPreferences = getSharedPreferences(MY_PREFERENCES, Context.MODE_PRIVATE);
-
-        status = sharedPreferences.getBoolean(STATUS, false);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        status = prefs.getBoolean(STATUS, false);
 
         if(status){
+            try {
+                Toast.makeText(MainActivity.this, "Hello " + prefs.getString("fnm", "NULL") + "!", Toast.LENGTH_LONG).show();
+            }
+            catch(Exception e){
+                Toast.makeText(MainActivity.this, "Hello " + prefs.getString("usn", "NULL") + "!", Toast.LENGTH_LONG).show();
+            }
+
             finish();
             Intent intent = new Intent(MainActivity.this, data.class);
             startActivity(intent);
@@ -122,9 +129,9 @@ public class MainActivity extends AppCompatActivity {
                         //if no error in response
                         if (!obj.getBoolean("error")) {
                             //String username = obj.getString("usn");
-                            String username=obj.getString("usn");
-                            SharedPreferences.Editor editor = sharedPreferences.edit();
-                            editor.putString(USERNAME, username);
+                            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+                            SharedPreferences.Editor editor = prefs.edit();
+                            editor.putString("usn", obj.getString("usn"));
                             editor.putBoolean(STATUS, true);
                             editor.apply();
 

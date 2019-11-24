@@ -38,6 +38,119 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <ImageView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/ic_pos"/>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="Entry"
+                android:gravity="center"
+                android:theme="@style/normal"
+                android:layout_marginEnd="8dp"/>
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="8dp"
+                android:padding="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:theme="@style/parkDif">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="Your Slot"
+                android:gravity="center"
+                android:theme="@style/normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:padding="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:theme="@style/parkVac">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="Vacant"
+                android:gravity="center"
+                android:theme="@style/normal"
+                android:layout_marginEnd="8dp"/>
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="8dp"
+                android:padding="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:theme="@style/parkOcc">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="Occupied"
+                android:gravity="center"
+                android:theme="@style/normal"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/navBarBorder"
+            android:theme="@style/border"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+
+        <LinearLayout
             android:id="@+id/p13"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -450,7 +563,7 @@
         </LinearLayout>
 
         <RelativeLayout
-            android:id="@+id/navBarBorder"
+            android:id="@+id/navBarBorder2"
             android:theme="@style/border"
             android:layout_width="match_parent"
             android:layout_height="3dp"/>
@@ -459,162 +572,16 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:orientation="horizontal"
             android:paddingHorizontal="16dp"
-            android:paddingVertical="8dp">
-
-            <ImageView
-                android:background="@color/colorPrimary"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:src="@drawable/ic_pos"/>
+            android:paddingVertical="8dp"
+            android:theme="@style/label">
 
             <TextView
-                android:background="@color/colorPrimary"
-                android:layout_width="0dp"
-                android:layout_weight="5"
+                android:id="@+id/Message"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Entry"
-                android:gravity="center"
-                android:theme="@style/normal"
-                android:layout_marginEnd="8dp"/>
-
-            <RelativeLayout
-                android:background="@color/colorPrimary"
-                android:layout_marginStart="8dp"
-                android:padding="1dp"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:theme="@style/parkDif">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-            </RelativeLayout>
-
-            <TextView
-                android:background="@color/colorPrimary"
-                android:layout_width="0dp"
-                android:layout_weight="5"
-                android:layout_height="match_parent"
-                android:text="For Differently Abled"
-                android:gravity="center"
-                android:theme="@style/normal"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="8dp">
-
-            <RelativeLayout
-                android:background="@color/colorPrimary"
-                android:padding="1dp"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:theme="@style/parkErr">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-            </RelativeLayout>
-
-            <TextView
-                android:background="@color/colorPrimary"
-                android:layout_width="0dp"
-                android:layout_weight="5"
-                android:layout_height="match_parent"
-                android:text="Parking Error"
-                android:gravity="center"
-                android:theme="@style/normal"
-                android:layout_marginEnd="8dp"/>
-
-            <RelativeLayout
-                android:background="@color/colorPrimary"
-                android:layout_marginStart="8dp"
-                android:padding="1dp"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:theme="@style/parkOcc">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-            </RelativeLayout>
-
-            <TextView
-                android:background="@color/colorPrimary"
-                android:layout_width="0dp"
-                android:layout_weight="5"
-                android:layout_height="match_parent"
-                android:text="Occupied"
-                android:gravity="center"
-                android:theme="@style/normal"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="8dp">
-
-            <RelativeLayout
-                android:background="@color/colorPrimary"
-                android:padding="1dp"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:theme="@style/parkRes">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-            </RelativeLayout>
-
-            <TextView
-                android:background="@color/colorPrimary"
-                android:layout_width="0dp"
-                android:layout_weight="5"
-                android:layout_height="match_parent"
-                android:text="Reserved"
-                android:gravity="center"
-                android:theme="@style/normal"
-                android:layout_marginEnd="8dp"/>
-
-            <RelativeLayout
-                android:background="@color/colorPrimary"
-                android:layout_marginStart="8dp"
-                android:padding="1dp"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:theme="@style/parkVac">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-            </RelativeLayout>
-
-            <TextView
-                android:background="@color/colorPrimary"
-                android:layout_width="0dp"
-                android:layout_weight="5"
-                android:layout_height="match_parent"
-                android:text="Vacant"
-                android:gravity="center"
-                android:theme="@style/normal"/>
+                android:layout_gravity="center"
+                android:gravity="center"/>
 
         </LinearLayout>
 
